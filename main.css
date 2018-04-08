@@ -276,16 +276,57 @@ font-size: 13px;
 .pick-modal-content, .narwhal-modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 0;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 90%; /* Could be more or less, depending on screen size */
+}
+.modal-photo{
+  width: 100%;
+    margin-top: -32PX;
+    z-index: -1;
+}
+.project-title{
+  color: black;
+text-align: left;
+margin-top: 1rem;
+margin-left: 1rem;
+}
+.sub-project-title{
+  margin: 0;
+margin-left: 20px;
+font-weight: lighter;
+border-bottom: 1px solid lightgrey;
+padding-bottom: 1rem;
+margin-right: 2rem;
+}
+.project-description{
+  padding:0 1rem;
+}
+.project-link{
+  display: inline-block;
+      margin-left: 1rem;
+      border: 1px solid #e31b6d;
+      padding: .5rem 1rem;
+      cursor: pointer;
+      transition: .3s ease-in-out;
+      font-weight: lighter;
+      font-size: 1rem;
+}
+.project-link:hover{
+  background:#e31b6d;
+  color:white;
+}
+.fa-external-link-alt{
+  margin-right:10px;
 }
 /* The Close Button */
 .close {
-    color: #aaa;
+  color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: relative;
+    margin-right: 1rem;
 }
 
 .close:hover,
