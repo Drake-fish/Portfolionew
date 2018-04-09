@@ -99,6 +99,7 @@ margin-right: 1rem;
   .section-title{
     color:black;
     font-size:3rem;
+    margin-top:2rem;
   }
   .underline{
     width:150px;
@@ -178,6 +179,7 @@ transition:.4s ease-in-out;
 .triangle{
 width: 0;
 height: 0;
+margin-top:1rem;
 border-style: solid;
 border-color: white transparent transparent transparent;
 position:absolute;
@@ -262,7 +264,7 @@ font-size: 13px;
 .pick-modal, .narwhal-modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 5; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -334,4 +336,131 @@ margin-right: 2rem;
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+.hexagon-adj{
+  position:relative;
+  display:block;
+  margin:0 auto;
+}
+.icon{
+  display:inline-block;
+  width:49%;
+  box-sizing:border-box;
+  text-align:center;
+  font-size:1rem;
+  position:relative;
+  vertical-align:top;
+}
+.icon-image{
+  position: absolute;
+font-size: 4rem;
+top: 46px;
+left: 73px;
+color: white;
+}
+.icon-sub-text{
+
+    width: 90%;
+    margin: 0 auto;
+}
+.hexagon {
+  position: relative;
+  width: 300px;
+  height: 173.21px;
+  margin: 86.60px auto;
+  background-image: url('./profilepicreal.jpg');
+  background-size: auto 346.4102px;
+  background-position: center;
+  box-shadow: 0px 6px 13px lightgrey;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 43.93px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 300.0000px;
+  height: 173.20508075688775px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -106.0660px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -106.0660px;
+  box-shadow: 0px 6px 13px lightgrey;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 300.0000px;
+  height: 173.2051px;
+  z-index: 2;
+  background: inherit;
+}
+.about-info{
+  width: 83%;
+    margin: 0 auto;
+    margin-top: 7rem;
+    text-align: center;
+}
+.skills-title{
+  margin-left:2rem;
+}
+.skills{
+  list-style: none;
+    padding: 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+
+}
+.skills li{
+  width:100px;
+  position:relative;
+  margin-bottom:10px;
+}
+.skill-name{
+  text-align:center;
+  display:block;
+}
+.skill-image{
+  width: 47px;
+      position: absolute;
+      top: 16px;
+      left: 27px;
+
 }
