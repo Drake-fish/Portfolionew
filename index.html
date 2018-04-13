@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <title>Drake's Portfolio</title>
-  </head>
-  <body>
-    <section id="home" class="home-container container">
-      <h1 class="greeting">Hello, I am <span class="name">Drake Fish</span></h1>
-      <h2>I am a Front-End Developer</h2>
-      <a href="#portfolio">
-        <div class="view-work">
 
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <title>Drake's Portfolio</title>
+</head>
 
-          <h3>View my work</h3><i class="fas fa-arrow-right"></i>
-        </div>
-      </a>
-    </section>
+<body>
+  <section id="home" class="home-container container">
+    <h1 class="greeting">Hello, I am <span class="name">Drake Fish</span></h1>
+    <h2>I am a Front-End Developer</h2>
+    <a href="#portfolio">
+      <div class="view-work">
+        <h3>View my work</h3><i class="fas fa-arrow-right"></i>
+      </div>
+    </a>
+  </section>
   <nav id='nav_bar'>
+    <div class="hamburger">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </div>
     <ul class='nav_links'>
       <li><a class="home" href="#home">Home</a></li>
       <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
@@ -29,63 +34,77 @@
       <li><a class="contact" href="#contact">Contact</a></li>
     </ul>
   </nav>
-    <section id="portfolio" class="portfolio-container container">
-      <h2 class="section-title">PROJECTS</h2>
-      <div class="underline"></div>
-      <div class="projects">
-        <div class="card">
-          <img class="card-background" src="./youpick.jpg"/>
-          <h3 class="card-title">You Pick</h3>
-          <h6 class="language">Node + React.js</h6>
-          <h4 class="learn-button">Learn More</h4>
-        </div>
-        <div id="you-pick-modal" class="pick-modal">
-
-          <!-- Modal content -->
-          <div class="pick-modal-content">
-            <span class="close">&times;</span>
-            <img class="modal-photo" src="./youpick.jpg"/>
-            <div class="project-info">
-              <h2 class="project-title">You Pick</h2>
-              <h5 class="sub-project-title">React.js + Node App</h5>
-              <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h3 class="project-link"><i class="fas fa-external-link-alt"></i>View Live</h3>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <img class="card-background" src="./trianglify.png"/>
-          <h3 class="card-title">You Pick</h3>
-          <h6 class="language">Node + React.js</h6>
-          <h4 class="learn-button">Learn More</h4>
-        </div>
-        <div id="narwhal-modal" class="narwhal-modal">
-
-          <!-- Modal content -->
-          <div class="narwhal-modal-content">
-            <span class="close">&times;</span>
-            <p>This is the narwhal modal</p>
-          </div>
-
-        </div>
-        <div class="card">
-          <img class="card-background" src="./trianglify.png"/>
-          <h3 class="card-title">You Pick</h3>
-          <h6 class="language">Node + React.js</h6>
-          <h4 class="learn-button">Learn More</h4>
-        </div>
-        <div class="card">
-          <img class="card-background" src="./trianglify.png"/>
-          <h3 class="card-title">You Pick</h3>
-          <h6 class="language">Node + React.js</h6>
-          <h4 class="learn-button">Learn More</h4>
-        </div>
+  <section id="portfolio" class="portfolio-container container">
+    <h2 class="section-title">PROJECTS</h2>
+    <div class="underline"></div>
+    <div class="projects">
+      <div class="card">
+        <img class="card-background" src="./youpick.jpg" />
+        <h3 class="card-title">You Pick</h3>
+        <h6 class="language">Backbone.js + React.js</h6>
+        <h4 class="learn-button">Learn More</h4>
       </div>
-    </section>
-    <section id="about" class="about-container container">
-      <h2 class="section-title">ABOUT</h2>
-      <div class="underline"></div>
+      <div id="you-pick-modal" class="pick-modal">
+
+        <!-- Modal content -->
+        <div class="pick-modal-content">
+          <span class="close">&times;</span>
+          <img class="modal-photo" src="./youpick.jpg" />
+          <div class="project-info">
+            <h2 class="project-title">You Pick</h2>
+            <h5 class="sub-project-title">Backbone.js + React.js</h5>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3 class="project-link"><i class="fas fa-external-link-alt"></i>View Live</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <img class="card-background" src="./narwhal.jpeg" />
+        <h3 class="card-title">Narwhal</h3>
+        <h6 class="language">Node.js + Express.js + React.js</h6>
+        <h4 class="learn-button">Learn More</h4>
+      </div>
+      <div id="narwhal-modal" class="narwhal-modal">
+
+        <!-- Modal content -->
+        <div class="narwhal-modal-content">
+          <span class="close">&times;</span>
+          <div class="carousel-container">
+            <img class="mySlides" src="./narwhal.jpeg" />
+            <img class="mySlides" src="./bestesttools.jpeg" />
+            <span class="left-arrow">&#10094;</span>
+            <span class="right-arrow">&#10095;</span>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title">Narwhal</h2>
+            <h5 class="sub-project-title">Node.js + Express.js + React.js</h5>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3 class="project-link"><i class="fas fa-external-link-alt"></i>View Live</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <img class="card-background" src="./bestesttools.jpeg" />
+        <h3 class="card-title">Bestest Tools</h3>
+        <h6 class="language">React.js + MongoDB</h6>
+        <h4 class="learn-button">Learn More</h4>
+      </div>
+      <div class="card">
+        <img class="card-background" src="./trianglify.png" />
+        <h3 class="card-title">Bestest Tools</h3>
+        <h6 class="language">React.js + MongoDB</h6>
+        <h4 class="learn-button">Learn More</h4>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about-container container">
+    <h2 class="section-title">ABOUT</h2>
+    <div class="underline"></div>
+    <div class="traits">
       <div class="icon">
         <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="150" height="158" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#327c92" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
         <i class="fas fa-fighter-jet icon-image"></i>
@@ -99,7 +118,7 @@
         <p class="icon-sub-text">I make all descisions based on reason, and evidence. I think through every situation, and rarely act on inpulse.</p>
       </div>
       <div class="icon">
-        <svg  class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="150" height="158" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#327c92" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+        <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="150" height="158" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#327c92" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
         <i class="fas fa-flask icon-image"></i>
         <h3 class="icon-title">Adaptive</h3>
         <p class="icon-sub-text">I thrive in any environment. I leave my ego at the door, and welcome all types of feedback. Change is growth. </p>
@@ -110,156 +129,159 @@
         <h3 class="icon-title">Curious</h3>
         <p class="icon-sub-text">I'm interested in the how, what, when, where and why. I never stop exploring and expanding my boundaries. </p>
       </div>
-      <div class="about-info-container">
-        <div class="info">
-          <div class="hexagon">
-            <div class="hexTop"></div>
-            <div class="hexBottom"></div>
-          </div>
-          <p class="about-info">Great to meet you! I'm a Front-End Developer, always looking for new opprotunities in Austin, Texas. I have a passon for creating truely unique experiences. Let's work together!</p>
-        </div>
-        <div class="skills-container">
-          <h3 class="skills-title">My world revolves around:</h3>
-          <ul class="skills">
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://cdn.iconscout.com/public/images/icon/free/png-512/css-logo-3bbe75af1130dcd9-512x512.png"/>
-                <span class="skill-name">CSS</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"/>
-                <span class="skill-name">HTML</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="http://pluspng.com/img-png/logo-javascript-png-javascript-tutorials-400.png"/>
-                <span class="skill-name">JavaScript</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://techchronos.com/wp-content/uploads/SszarkLabs/stack-icon/cywBkaGwkMeDAuJbSt1k.png"/>
-                <span class="skill-name">React.js</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://raw.githubusercontent.com/reactjs/redux/master/logo/logo.png"/>
-                <span class="skill-name">Redux</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://cdn.iconscout.com/public/images/icon/free/png-512/backbone-3269c59e2be71037-512x512.png"/>
-                <span class="skill-name">Backbone.js</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="http://www.free-icons-download.net/images/jquery-icon-17841.png"/>
-                <span class="skill-name">JQuery</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png"/>
-                <span class="skill-name">Node.js</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://png.icons8.com/small/1600/xml.png"/>
-                <span class="skill-name">XML</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://msdnshared.blob.core.windows.net/media/2017/03/azuresqlsquaretransparent1.png"/>
-                <span class="skill-name">SQL</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="http://pluspng.com/img-png/logo-mongodb-png-mongodb-logo-anything-but-the-simplest-of-web-applications-requires-a-database-to-store-and-serve-content-from-choosing-the-right-database-and-structuring-413.png"/>
-                <span class="skill-name">MongoDB</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://camo.githubusercontent.com/647e291a5fd52d50e01deb82f9392c462df148a6/687474703a2f2f617070732e6f63746f636f6e73756c74696e672e636f6d2f696d616765732f6578707265737349636f6e2e706e67"/>
-                <span class="skill-name">Express.js</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://www.drupal.org/files/project-images/rain-drop-hi.png"/>
-                <span class="skill-name">REST</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="http://staging.amdexcorp.com/sites/default/files/inline-images/icon-lg-AX-devops-agile.png"/>
-                <span class="skill-name">Agile</span>
-              </div>
-            </li>
-            <li>
-              <div class="skill-icon">
-                <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-                <img class="skill-image" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/>
-                <span class="skill-name">Git</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <div class="triangle"></div>
-    <section id="contact" class="contact-container container">
-      <h2  class="section-title">CONTACT</h2>
-      <div class="underline"></div>
-      <form action="https://formspree.io/drake_fish@yahoo.com" method="POST" class="contact-form">
-        <p class="contact-text">Have a question, or want to work together? Shoot me a message!</p>
-        <div class="field-wrap">
-          <label class="name-label">Name</label>
-          <input id="name" type="text" name="name" required/>
-        </div>
-        <div class="field-wrap">
-          <label class="email-label">Email</label>
-          <input id="email" type="email" name="_replyto" required/>
-        </div>
-        <div class="field-wrap">
-          <label class="message-label">Your Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <input class="submit" type="submit" value="send" placeholder="Submit"/>
-      </form>
-    </section>
-    <div id="preload">
-       <img src="./trianglify.png" width="1" height="1" alt="hero" />
     </div>
-  </body>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./main.js"></script>
+    <div class="about-info-container">
+      <div class="info">
+        <div class="hexagon">
+          <div class="hexTop"></div>
+          <div class="hexBottom"></div>
+        </div>
+        <p class="about-info">Great to meet you! I'm a Front-End Developer, always looking for new opprotunities in Austin, Texas. I have a passon for creating truely unique experiences. Let's work together!</p>
+      </div>
+      <div class="skills-container">
+        <h3 class="skills-title">My world revolves around:</h3>
+        <ul class="skills">
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://cdn.iconscout.com/public/images/icon/free/png-512/css-logo-3bbe75af1130dcd9-512x512.png" />
+              <span class="skill-name">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" />
+              <span class="skill-name">HTML</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="http://pluspng.com/img-png/logo-javascript-png-javascript-tutorials-400.png" />
+              <span class="skill-name">JavaScript</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://techchronos.com/wp-content/uploads/SszarkLabs/stack-icon/cywBkaGwkMeDAuJbSt1k.png" />
+              <span class="skill-name">React.js</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://raw.githubusercontent.com/reactjs/redux/master/logo/logo.png" />
+              <span class="skill-name">Redux</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://cdn.iconscout.com/public/images/icon/free/png-512/backbone-3269c59e2be71037-512x512.png" />
+              <span class="skill-name">Backbone.js</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="http://www.free-icons-download.net/images/jquery-icon-17841.png" />
+              <span class="skill-name">JQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png" />
+              <span class="skill-name">Node.js</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://png.icons8.com/small/1600/xml.png" />
+              <span class="skill-name">XML</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://msdnshared.blob.core.windows.net/media/2017/03/azuresqlsquaretransparent1.png" />
+              <span class="skill-name">SQL</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="http://pluspng.com/img-png/logo-mongodb-png-mongodb-logo-anything-but-the-simplest-of-web-applications-requires-a-database-to-store-and-serve-content-from-choosing-the-right-database-and-structuring-413.png" />
+              <span class="skill-name">MongoDB</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://camo.githubusercontent.com/647e291a5fd52d50e01deb82f9392c462df148a6/687474703a2f2f617070732e6f63746f636f6e73756c74696e672e636f6d2f696d616765732f6578707265737349636f6e2e706e67" />
+              <span class="skill-name">Express.js</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://www.drupal.org/files/project-images/rain-drop-hi.png" />
+              <span class="skill-name">REST</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="http://staging.amdexcorp.com/sites/default/files/inline-images/icon-lg-AX-devops-agile.png" />
+              <span class="skill-name">Agile</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-icon">
+              <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
+              <img class="skill-image" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" />
+              <span class="skill-name">Git</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="triangle"></div>
+  <section id="contact" class="contact-container container">
+    <h2 class="section-title">CONTACT</h2>
+    <div class="underline"></div>
+    <form action="https://formspree.io/drake_fish@yahoo.com" method="POST" class="contact-form">
+      <p class="contact-text">Have a question, or want to work together? Shoot me a message!</p>
+      <div class="field-wrap">
+        <label class="name-label">Name</label>
+        <input id="name" type="text" name="name" required/>
+      </div>
+      <div class="field-wrap">
+        <label class="email-label">Email</label>
+        <input id="email" type="email" name="_replyto" required/>
+      </div>
+      <div class="field-wrap">
+        <label class="message-label">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <input class="submit" type="submit" value="send" placeholder="Submit" />
+    </form>
+  </section>
+  <div id="preload">
+    <img src="./trianglify.png" width="1" height="1" alt="hero" />
+    <img src="./profilepicreal.jpg" width="1" height="1" alt="photo of Drake" />
+    <img src="./youpick.jpg" width="1" height="1" alt="photo of project" />
+    <img src="./narwhal.jpeg" width="1" height="1" alt="photo of narwhal" />
+    <img src="./bestesttools.jpeg" width="1" height="1" alt="photo of bestesttools" />
+
+  </div>
+</body>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./main.js"></script>
 
 </html>
