@@ -7,14 +7,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <title>Drake's Portfolio</title>
 </head>
 
 <body>
   <section id="home" class="home-container container">
-    <h1 class="greeting">Hello, I am <span class="name">Drake Fish</span></h1>
-    <h2>I am a Front-End Developer</h2>
+    <h1 class="greeting">Hello, My name is <span class="name">Drake Fish</span></h1>
+    <a href="" class="typewrite" data-period="2000" data-type='[ "I am A Front-End Developer.", "I am Creative.", "I Enjoy Problem Solving.", "I Love to Learn." ]'>
+   <span class="wrap"></span>
+ </a>
     <a href="#portfolio">
       <div class="view-work">
         <h3>View my work</h3><i class="fas fa-arrow-right"></i>
@@ -38,7 +43,7 @@
     <h2 class="section-title">PROJECTS</h2>
     <div class="underline"></div>
     <div class="projects">
-      <div class="card">
+      <div data-aos="fade-right" data-aos-duration=1000 class="card">
         <img class="card-background" src="./youpick.jpg" />
         <h3 class="card-title">You Pick</h3>
         <h6 class="language">Backbone.js + React.js</h6>
@@ -53,14 +58,14 @@
           <div class="project-info">
             <h2 class="project-title">You Pick</h2>
             <h5 class="sub-project-title">Backbone.js + React.js</h5>
-            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="project-description">The Iron Yard Demo Day project. This app was built to solve the issue of figuring out what to eat or do! Features include: Creating a profile of things you love to do, and favorite foods. Saving intersting things for later, Different results
+              based on weather, and time of day. </p>
             <h3 class="project-link"><i class="fas fa-external-link-alt"></i>View Live</h3>
           </div>
         </div>
 
       </div>
-      <div class="card">
+      <div data-aos="fade-left" data-aos-duration=1000 class="card">
         <img class="card-background" src="./narwhal.jpeg" />
         <h3 class="card-title">Narwhal</h3>
         <h6 class="language">Node.js + Express.js + React.js</h6>
@@ -72,32 +77,45 @@
         <div class="narwhal-modal-content">
           <span class="close">&times;</span>
           <div class="carousel-container">
-            <img class="mySlides" src="./narwhal.jpeg" />
-            <img class="mySlides" src="./bestesttools.jpeg" />
+            <img class="mySlides" src="./narwhalHome.png" />
+            <img class="mySlides" src="./narwhalreviews.png" />
+            <img class="mySlides" src="./narwhalblocked.png" />
+            <img class="mySlides" src="./narwhaldetails.png" />
             <span class="left-arrow">&#10094;</span>
             <span class="right-arrow">&#10095;</span>
           </div>
           <div class="project-info">
             <h2 class="project-title">Narwhal</h2>
             <h5 class="sub-project-title">Node.js + Express.js + React.js</h5>
-            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="project-description">Narwhal was built as a hackathon project at Bazaarvoice. It won best tool award. This is an internal tool used by support to see exactly what reviews should be showing on clients site, where the reviews are syndicating from, and if any reviews
+              are part of a product family. It elimiates the use of 4 other tools and combines them into one tool. Additonally, it allows users to see what reviews are blocked from syndicating from a retailer or brand, and why. This significantly cuts
+              down on troubleshooting time, and allows the team to be more efficent. </p>
             <h3 class="project-link"><i class="fas fa-external-link-alt"></i>View Live</h3>
           </div>
         </div>
 
       </div>
-      <div class="card">
+      <div data-aos="fade-right" data-aos-duration=1000 class="card">
         <img class="card-background" src="./bestesttools.jpeg" />
         <h3 class="card-title">Bestest Tools</h3>
         <h6 class="language">React.js + MongoDB</h6>
         <h4 class="learn-button">Learn More</h4>
       </div>
-      <div class="card">
-        <img class="card-background" src="./trianglify.png" />
-        <h3 class="card-title">Bestest Tools</h3>
-        <h6 class="language">React.js + MongoDB</h6>
-        <h4 class="learn-button">Learn More</h4>
+      <div id="bestest-modal" class="bestest-modal">
+
+        <!-- Modal content -->
+        <div class="bestest-modal-content">
+          <span class="close">&times;</span>
+          <img class="modal-photo" src="./bestestHome.png" />
+          <div class="project-info">
+            <h2 class="project-title">Bestest Tools</h2>
+            <h5 class="sub-project-title">React.js</h5>
+            <p class="project-description">Bestest Tools was built to keep all tools in one place. This tool allows users to search for a specific tool, browse tools, and learn how to use tools. This allows teams to be more efficent and productive, as well as decrease ramp up time
+              for using tools. </p>
+            <h3 class="project-link"><i class="fas fa-external-link-alt"></i>View Live</h3>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -105,32 +123,32 @@
     <h2 class="section-title">ABOUT</h2>
     <div class="underline"></div>
     <div class="traits">
-      <div class="icon">
+      <div class="icon" data-aos="flip-left" data-aos-duration=1000>
         <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="150" height="158" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#327c92" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
         <i class="fas fa-fighter-jet icon-image"></i>
         <h3 class="icon-title">Determined</h3>
         <p class="icon-sub-text">I have an absolute firmness for purpose, and resolve to achieve my goals.</p>
       </div>
-      <div class="icon">
+      <div class="icon" data-aos="flip-left" data-aos-duration=1000>
         <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="150" height="158" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#327c92" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
         <i class="fas fa-code-branch icon-image"></i>
         <h3 class="icon-title">Logical</h3>
         <p class="icon-sub-text">I make all descisions based on reason, and evidence. I think through every situation, and rarely act on inpulse.</p>
       </div>
-      <div class="icon">
+      <div class="icon" data-aos="flip-left" data-aos-duration=1000>
         <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="150" height="158" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#327c92" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
         <i class="fas fa-flask icon-image"></i>
         <h3 class="icon-title">Adaptive</h3>
         <p class="icon-sub-text">I thrive in any environment. I leave my ego at the door, and welcome all types of feedback. Change is growth. </p>
       </div>
-      <div class="icon">
+      <div class="icon" data-aos="flip-left" data-aos-duration=1000>
         <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="150" height="158" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#327c92" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
         <i class="far fa-lightbulb icon-image"></i>
         <h3 class="icon-title">Curious</h3>
         <p class="icon-sub-text">I'm interested in the how, what, when, where and why. I never stop exploring and expanding my boundaries. </p>
       </div>
     </div>
-    <div class="about-info-container">
+    <div data-aos="zoom-in" data-aos-duration=1000 class="about-info-container">
       <div class="info">
         <div class="hexagon">
           <div class="hexTop"></div>
@@ -200,7 +218,7 @@
           <li>
             <div class="skill-icon">
               <svg class="hexagon-adj" version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewbox="0 0 182 157.61662348876783" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);"><path fill="#e6e6e6" d="M0 78.80831174438391L45.5 0L136.5 0L182 78.80831174438391L136.5 157.61662348876783L45.5 157.61662348876783Z"></path></svg>
-              <img class="skill-image" src="https://png.icons8.com/small/1600/xml.png" />
+              <img class="skill-image" src="https://png.icons8.com/small/110000/xml.png" />
               <span class="skill-name">XML</span>
             </div>
           </li>
@@ -277,11 +295,21 @@
     <img src="./youpick.jpg" width="1" height="1" alt="photo of project" />
     <img src="./narwhal.jpeg" width="1" height="1" alt="photo of narwhal" />
     <img src="./bestesttools.jpeg" width="1" height="1" alt="photo of bestesttools" />
-
+    <img src="./bestestHome.png" width="1" height="1" alt="photo of bestesttools app" />
+    <img src="./narwhalblocked.png" width="1" height="1" alt="photo of narwhal blocked" />
+    <img src="./narwhalHome.png" width="1" height="1" alt="photo of narwhal home page" />
+    <img src="./narwhalreviews.png" width="1" height="1" alt="photo of narwhal reviews" />
   </div>
 </body>
+<script>
+  AOS.init({
+    easing: 'ease-out-back',
+    duration: 10000
+  });
+</script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./main.js"></script>
+
 
 </html>

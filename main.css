@@ -19,6 +19,15 @@ a {
   color: white;
 }
 
+.typewrite {
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
 .home-container {
   background: #262934;
   background: url('./trianglify.png');
@@ -29,6 +38,8 @@ a {
   color: white;
   margin: 0;
   font-size: 31px;
+  width: 88%;
+  margin: 0 auto;
 }
 
 .name {
@@ -237,25 +248,29 @@ a {
 
 .mySlides {
   width: 100%;
+  transition: .3s ease;
+  border-bottom: 3px solid black;
 }
 
 .left-arrow {
   position: absolute;
-  top: 113px;
+  bottom: 0;
   left: 0;
   padding: 1rem;
-  background: white;
+  color: black;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
 
 .right-arrow {
   position: absolute;
-  top: 113px;
+  bottom: 0;
   right: 0;
   cursor: pointer;
   padding: 1rem;
-  background: white;
+  color: black;
+  font-size: 1.5rem;
   transition: .3s ease-in-out;
 }
 
@@ -276,7 +291,7 @@ a {
 
 .card:hover .card-title {
   opacity: 1;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .card:hover .language {
@@ -285,7 +300,7 @@ a {
 
 .card:hover .learn-button {
   opacity: 1;
-  bottom: 10px;
+  bottom: 29px;
 }
 
 .card:hover .card-background {
@@ -388,7 +403,7 @@ textarea {
   font-size: 13px;
 }
 
-.pick-modal, .narwhal-modal {
+.pick-modal, .narwhal-modal, .bestest-modal {
   transform: scale(0);
   opacity: 0;
   /* Hidden by default */
@@ -413,7 +428,7 @@ textarea {
 
 /* Modal Content/Box */
 
-.pick-modal-content, .narwhal-modal-content {
+.pick-modal-content, .narwhal-modal-content, .bestest-modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   /* 15% from the top and centered */
@@ -427,6 +442,7 @@ textarea {
   width: 100%;
   margin-top: -32PX;
   z-index: -1;
+  border-bottom: 3px solid black;
 }
 
 .project-title {
@@ -597,7 +613,7 @@ textarea {
 }
 
 .skills-title {
-  margin-left: 2rem;
+  text-align: center;
 }
 
 .skills {
