@@ -114,7 +114,7 @@ $(document).ready(function() {
     }
   });
 
-  var navAnimate = function() {
+  navAnimate = () => {
     $('#nav_bar').toggleClass('navbar-fixed-top-open');
     $('.nav_links').toggleClass('nav_link_open');
     $('.hamburger-top').toggleClass('top-open');
