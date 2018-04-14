@@ -81,7 +81,6 @@ $(document).ready(function() {
   };
 
 
-
   //scrolling code
   $(window).scroll(function() {
     if ($(window).scrollTop() > 750) {
@@ -92,26 +91,6 @@ $(document).ready(function() {
       $('#nav_bar').removeClass('navbar-fixed-top');
     }
 
-
-    //code to control the changing of the navigation state.
-
-
-    var windscroll = $(window).scrollTop();
-    var fromBottom = $(document).height() - ($(window).scrollTop() + $(window).height());
-    if (fromBottom == 0) { // <-- scrolled to the bottom
-      $('nav a.active').removeClass('active');
-      $('nav a:last').addClass('active');
-    } else if (windscroll > 60) {
-      $('.container > div').each(function(i) {
-        if ($(this).position().top <= windscroll + 60) {
-          $('nav a.active').removeClass('active');
-          $('nav a').eq(i).addClass('active');
-        }
-      });
-    } else {
-      $('nav a.active').removeClass('active');
-      $('nav a:first').addClass('active');
-    }
   });
 
   navAnimate = () => {
@@ -125,12 +104,15 @@ $(document).ready(function() {
   $('.hamburger').click(() => {
     navAnimate();
   });
-  $('.nav_links').click(() => {
-    navAnimate();
-  });
-  $('.right-arrow').click(() => {
 
+  $('.nav_links').click(() => {
+    if ($(window).width() < 900) {
+
+      navAnimate();
+    }
   });
+
+
   var slideIndex = 1;
   showDivs(slideIndex);
 
@@ -159,40 +141,9 @@ $(document).ready(function() {
   $('.right-arrow').click(() => {
     plusDivs(1);
   });
-  // Select all links with hashes
-  $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-        location.hostname == this.hostname
-      ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-          // Only prevent default if animation is actually gonna happen
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            };
-          });
-        }
-      }
-    });
+
+
+  //modal code
   var modals = [$('#you-pick-modal'), $('#narwhal-modal'), $('#bestest-modal')];
 
 
@@ -253,3 +204,42 @@ $(document).ready(function() {
 
 
 });
+
+$(document).ready(function() {
+  $(document).on("scroll", onScroll);
+
+  //smoothscroll
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    $(document).off("scroll");
+
+    $('a').each(function() {
+      $(this).removeClass('active');
+    })
+    $(this).addClass('active');
+
+    var target = this.hash,
+      menu = target;
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top + 2
+    }, 500, 'swing', function() {
+      window.location.hash = target;
+      $(document).on("scroll", onScroll);
+    });
+  });
+});
+
+function onScroll(event) {
+  var scrollPos = $(document).scrollTop();
+  $('#nav_bar a').each(function() {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $('#nav_bar ul li a').removeClass("active");
+      currLink.addClass("active");
+    } else {
+      currLink.removeClass("active");
+    }
+  });
+}

@@ -10,6 +10,16 @@ body {
   margin: 0;
 }
 
+#portfolio {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#about {
+  max-width: 1132px;
+  margin: 0 auto;
+}
+
 div#preload {
   display: none;
 }
@@ -256,11 +266,12 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  color: black;
+  padding: .5rem 1.5rem;
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
   transition: .3s ease-in-out;
+  background-color: #99999985;
 }
 
 .right-arrow {
@@ -268,20 +279,11 @@ a {
   bottom: 0;
   right: 0;
   cursor: pointer;
-  padding: 1rem;
-  color: black;
+  padding: .5rem 1.5rem;
+  color: white;
   font-size: 1.5rem;
+  background-color: #99999985;
   transition: .3s ease-in-out;
-}
-
-.right-arrow:hover {
-  background-color: #5f5f5f99;
-  color: white;
-}
-
-.left-arrow:hover {
-  background-color: #5f5f5f99;
-  color: white;
 }
 
 .learn-button:hover {
@@ -370,6 +372,8 @@ textarea {
 .contact-form {
   height: 309px;
   margin-top: 1rem;
+  width: 380px;
+  margin: 0 auto;
 }
 
 .contact-text {
@@ -654,6 +658,8 @@ footer {
   list-style: none;
   font-size: 1.5rem;
   padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .footer-links li {
@@ -677,4 +683,100 @@ footer {
 
 .footer-links li:hover {
   background: #584f4f;
+}
+
+@media(min-width:600px) {
+  .icon {
+    width: 253px;
+  }
+  .icon-image {
+    left: 101px;
+  }
+  .projects {
+    display: block;
+    text-align: center;
+  }
+  .sub-project-title {
+    text-align: left;
+  }
+  .card {
+    width: 49%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 auto;
+    height: 13rem;
+  }
+  .card:hover .card-title {
+    margin-top: 3rem;
+  }
+  .pick-modal-content, .narwhal-modal-content, .bestest-modal-content {
+    width: 541px;
+  }
+}
+
+@media(min-width:900px) {
+  .hamburger {
+    display: none;
+  }
+  .nav_links {
+    padding-top: 1rem;
+    height: 18px;
+  }
+  .nav_links li {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .icon {
+    width: 221px;
+  }
+  .icon-image {
+    left: 85px;
+  }
+  .info {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 3rem;
+  }
+  .card {
+    height: 18rem;
+  }
+  .card:hover .learn-button {
+    bottom: 47px;
+  }
+  .card:hover .card-title {
+    margin-top: 6rem;
+  }
+  .pick-modal-content, .narwhal-modal-content, .bestest-modal-content {
+    width: 670px;
+  }
+  .skills-container {
+    width: 50%;
+    float: right;
+    margin-top: 2rem;
+  }
+  .triangle {
+    margin-top: 2rem;
+  }
+  .skills-title {
+    text-align: left;
+    margin-left: 22px;
+  }
+}
+
+@media(min-width:1000px) {
+  .skills-container {
+    width: 441px;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+  .info {
+    width: 543px;
+  }
+  .icon {
+    width: 246px;
+  }
+  .icon-image {
+    left: 99px;
+  }
 }
