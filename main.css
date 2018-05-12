@@ -469,6 +469,19 @@ textarea {
   padding: 0 1rem;
 }
 
+.project-info h6 {
+  margin-left: 1rem;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+.features {
+  list-style: none;
+  text-align: left;
+  padding: 0 1rem;
+}
+
 .project-link {
   display: inline-block;
   margin-left: 1rem;
@@ -478,6 +491,7 @@ textarea {
   transition: .3s ease-in-out;
   font-weight: lighter;
   font-size: 1rem;
+  color: black;
 }
 
 .project-link:hover {
