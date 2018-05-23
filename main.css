@@ -407,7 +407,7 @@ textarea {
   font-size: 13px;
 }
 
-.pick-modal, .narwhal-modal, .bestest-modal {
+.email-modal, .pick-modal, .narwhal-modal, .bestest-modal {
   transform: scale(0);
   opacity: 0;
   /* Hidden by default */
@@ -432,7 +432,7 @@ textarea {
 
 /* Modal Content/Box */
 
-.pick-modal-content, .narwhal-modal-content, .bestest-modal-content {
+.email-modal-content, .pick-modal-content, .narwhal-modal-content, .bestest-modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   /* 15% from the top and centered */
