@@ -467,6 +467,7 @@ textarea {
 
 .project-description {
   padding: 0 1rem;
+  text-align: left;
 }
 
 .project-info h6 {
@@ -725,6 +726,16 @@ footer {
   }
   .pick-modal-content, .narwhal-modal-content, .bestest-modal-content {
     width: 541px;
+  }
+}
+
+.github {
+  margin-right: 1rem;
+}
+
+@media(min-width:670px) {
+  .email-modal-content, .pick-modal-content, .narwhal-modal-content, .bestest-modal-content {
+    width: 627px;
   }
 }
 
